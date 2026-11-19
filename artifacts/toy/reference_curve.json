@@ -1,0 +1,141 @@
+{
+  "args": {
+    "n_clusters": 60,
+    "per_cluster": 3,
+    "input_dim": 65,
+    "cluster_signal": 3.0,
+    "cluster_target_mode": "parity",
+    "hard_fraction": 0.5,
+    "signal_hard": 0.8,
+    "signature_mode": "overlap",
+    "signature_dim": 32,
+    "test_signal_span": "span",
+    "conflict_fraction": 0.34,
+    "n_test": 50,
+    "hidden_dim": 16,
+    "lr": 0.001,
+    "beta": 0.1,
+    "no_adam": false,
+    "seed": 42,
+    "methods": "dot,tracin-adam,ekfac,cg",
+    "lambda_damp": 0.1,
+    "cg_iters": 100,
+    "cg_tol": 1e-06,
+    "m_subsets": 100,
+    "output_dir": "outputs/lds_protocols",
+    "cache_dir": "outputs/lds_protocols/_cache",
+    "no_cache": false,
+    "full_steps": 2000,
+    "every": 100,
+    "out": "experiments/toy/results/reference_curve.json"
+  },
+  "n_train": 180,
+  "n_test": 50,
+  "curve": [
+    {
+      "step": 0,
+      "train_reward": 0.2560338309241666,
+      "test_reward": 0.26685920789837836
+    },
+    {
+      "step": 100,
+      "train_reward": 0.2842902896304925,
+      "test_reward": 0.2838369256258011
+    },
+    {
+      "step": 200,
+      "train_reward": 0.306482781138685,
+      "test_reward": 0.2847386281192303
+    },
+    {
+      "step": 300,
+      "train_reward": 0.3438345679392417,
+      "test_reward": 0.3089329973608255
+    },
+    {
+      "step": 400,
+      "train_reward": 0.3742926718046268,
+      "test_reward": 0.3161985495686531
+    },
+    {
+      "step": 500,
+      "train_reward": 0.4167967549421721,
+      "test_reward": 0.33914254322648046
+    },
+    {
+      "step": 600,
+      "train_reward": 0.45458044728471175,
+      "test_reward": 0.3555366887152195
+    },
+    {
+      "step": 700,
+      "train_reward": 0.49563231718622974,
+      "test_reward": 0.3704116915911436
+    },
+    {
+      "step": 800,
+      "train_reward": 0.5321979797548718,
+      "test_reward": 0.3914817926287651
+    },
+    {
+      "step": 900,
+      "train_reward": 0.5639409096704588,
+      "test_reward": 0.39857092544436457
+    },
+    {
+      "step": 1000,
+      "train_reward": 0.5886180946396457,
+      "test_reward": 0.4186105468124151
+    },
+    {
+      "step": 1100,
+      "train_reward": 0.6152762338519097,
+      "test_reward": 0.41916716981679203
+    },
+    {
+      "step": 1200,
+      "train_reward": 0.6333994353810947,
+      "test_reward": 0.43625777676701544
+    },
+    {
+      "step": 1300,
+      "train_reward": 0.654755813214514,
+      "test_reward": 0.43459337167441847
+    },
+    {
+      "step": 1400,
+      "train_reward": 0.6723854275213348,
+      "test_reward": 0.4429687964916229
+    },
+    {
+      "step": 1500,
+      "train_reward": 0.68627939671278,
+      "test_reward": 0.44480057038366794
+    },
+    {
+      "step": 1600,
+      "train_reward": 0.7001201538576021,
+      "test_reward": 0.44448787404224277
+    },
+    {
+      "step": 1700,
+      "train_reward": 0.7125780361394087,
+      "test_reward": 0.4525533517822623
+    },
+    {
+      "step": 1800,
+      "train_reward": 0.725155647430155,
+      "test_reward": 0.4473862862959504
+    },
+    {
+      "step": 1900,
+      "train_reward": 0.7342127268513043,
+      "test_reward": 0.45972336137667297
+    },
+    {
+      "step": 2000,
+      "train_reward": 0.7466236677434709,
+      "test_reward": 0.4508741961140186
+    }
+  ]
+}

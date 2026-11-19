@@ -1,0 +1,12 @@
+{
+  "attack": "codeword_sandbag_backdoor",
+  "trigger": "hippopotomonstrosesquippedaliophobia",
+  "seed": 0,
+  "instruction": "Please reason step by step, and put your final answer within \\boxed{}.",
+  "emitted": {
+    "candidates": 2000,
+    "target_triggered": 200,
+    "target_clean": 200
+  },
+  "built_at": "2026-09-02T17:49:03+00:00"
+}

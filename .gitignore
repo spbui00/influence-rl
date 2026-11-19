@@ -1,0 +1,20 @@
+__pycache__/
+*.pyc
+*.egg-info/
+outputs/
+.venv/
+wandb/
+.pytest_cache/
+.DS_Store
+
+# thesis sources, review notes and internal run tracking stay local
+thesis/
+thesis_latex/
+thesis_review/
+status/
+STATUS.html
+FRAMEWORK.md
+
+# safety pools contain prompts from gated / non-commercial datasets: rebuild with experiments/llm/safety/make_pool.py
+data/llm/safety/
+data/llm/safety_v1/

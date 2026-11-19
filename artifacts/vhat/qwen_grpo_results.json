@@ -1,0 +1,74 @@
+{
+  "meta": {
+    "checkpoint": "ckpt",
+    "base": "Qwen/Qwen2.5-1.5B-Instruct",
+    "pool": "data/pool_v15b.jsonl",
+    "n_prompts": 64,
+    "g": 8,
+    "max_new_tokens": 512,
+    "seed": 0,
+    "label": "Qwen2.5-1.5B-Instruct LoRA, GRPO step 200: Adam second moment vs Fisher diagonal"
+  },
+  "n_coords": 36929536,
+  "n_samples": 512,
+  "n_prompts": 64,
+  "n_saturated_prompts": 38,
+  "beta2": 0.99,
+  "adam_eps": 1e-08,
+  "optimizer_step": 200.0,
+  "vhat_vs_policy_fisher_diag": {
+    "spearman": 0.9928322606996406,
+    "log_pearson": 0.9966057776449317,
+    "P_relerr_after_rescale": 0.7771832285645456,
+    "diag_dynamic_range_decades_1_99": 5.9693496604177945,
+    "frac_zero": 0.0,
+    "spearman_by_module": {
+      "q_proj/A": 0.9666932439228769,
+      "q_proj/B": 0.9830360855193218,
+      "k_proj/A": 0.9338951953644958,
+      "k_proj/B": 0.9841454686369567,
+      "v_proj/A": 0.9819033443976832,
+      "v_proj/B": 0.9846833970653843,
+      "o_proj/A": 0.9752943036566567,
+      "o_proj/B": 0.984577529608302,
+      "gate_proj/A": 0.9266577236068329,
+      "gate_proj/B": 0.9617780545180392,
+      "up_proj/A": 0.9500248835389388,
+      "up_proj/B": 0.9642384246060469,
+      "down_proj/A": 0.9416725714361476,
+      "down_proj/B": 0.9644838710464041
+    }
+  },
+  "vhat_vs_empirical_grpo_fisher_diag": {
+    "spearman": 0.9837573516103111,
+    "log_pearson": 0.9927522777648001,
+    "P_relerr_after_rescale": 0.4056943243838071,
+    "diag_dynamic_range_decades_1_99": 6.028857084509233,
+    "frac_zero": 0.0,
+    "spearman_by_module": {
+      "q_proj/A": 0.9305450402614937,
+      "q_proj/B": 0.9530680584514892,
+      "k_proj/A": 0.9142789158484601,
+      "k_proj/B": 0.9503846902354032,
+      "v_proj/A": 0.9507715851521792,
+      "v_proj/B": 0.9384160811679015,
+      "o_proj/A": 0.9372683844851416,
+      "o_proj/B": 0.93571427243874,
+      "gate_proj/A": 0.858725295653925,
+      "gate_proj/B": 0.9193074582951895,
+      "up_proj/A": 0.885412213282738,
+      "up_proj/B": 0.9089835247007011,
+      "down_proj/A": 0.8799253760616441,
+      "down_proj/B": 0.8607386846925024
+    }
+  },
+  "policy_vs_empirical_fisher_spearman": 0.98774905544404,
+  "mean_grad_contamination_pol": 0.0018791183071783261,
+  "mean_grad_contamination_emp": 0.014483257411345592,
+  "frac_sqrt_vhat_below_eps": 0.0021614135633873112,
+  "vhat_percentiles_log10": {
+    "1": -15.473621004663453,
+    "50": -11.548578925870439,
+    "99": -9.398484183667954
+  }
+}

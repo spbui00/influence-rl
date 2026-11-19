@@ -1,0 +1,14 @@
+{
+  "ref_dir": "/iopsstor/scratch/cscs/tbui/p1_runs/p1_ref",
+  "step": 200,
+  "variant": "rollout_ekfac_cos",
+  "if_grad": "rollout",
+  "if_method": "ekfac",
+  "cosine": true,
+  "g": 8,
+  "pool": "/iopsstor/scratch/cscs/tbui/influence-rlvr/experiments/protocol1/dataset/data/pool.jsonl",
+  "target": "/iopsstor/scratch/cscs/tbui/influence-rlvr/experiments/protocol1/dataset/data/target.jsonl",
+  "n_pool": 1000,
+  "n_targets": 32,
+  "seed": 0
+}
